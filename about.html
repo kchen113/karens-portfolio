@@ -47,7 +47,6 @@
 
         .logo img {
             max-width: 200px;
-            top:
         }
 
         .menu {
@@ -113,9 +112,24 @@
             font-weight: bold;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
-    .social{
-        justify-content: center;
-    }
+        .social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.social img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
     .dropdown {
     position: relative;
     display: inline-block;
@@ -231,11 +245,11 @@
         </div>
       </div>
     <div class="follow-text"><p>Follow me on:</p></div>
-        <div class="social">
-            <a href="http://www.instagram.com"><img src="images/instagram.png"width="5%"></a>
-            <a href="http:///www.twitter.com"><img src="images/twitter.png"width="5%"></a>
-            <a href="http:///www.facebook.com"><img src="images/facebook.png"width="5%"></a>
-        </div>
+      <div class="social">
+          <a href="http://www.instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+          <a href="http://www.twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+          <a href="http://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+      </div>
     <div class="footer">
         <p>Copyright material</p>
     </div>
